@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".DashboardActivity">
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="397dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#E4CF10"
+        android:text="@string/register_license_plate"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
+        app:layout_constraintVertical_bias="0.994" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="248dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="396dp"
+        android:backgroundTint="#E4CF10"
+        app:layout_constraintBottom_toTopOf="@+id/registerbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/ownerradio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E4CF10"
+            android:text="@string/owner" />
+
+        <RadioButton
+            android:id="@+id/guestradio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E4CF10"
+            android:text="@string/guest" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/questions"
+        android:layout_width="290dp"
+        android:layout_height="26dp"
+        android:background="#E4CF10"
+        android:text="@string/choose_one_option"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintLeft_toLeftOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
+
+    <Button
+        android:id="@+id/slot1_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/park"
+        android:textSize="20sp"
+        android:textColor="#E4CF10"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/slot2_in"
+        app:layout_constraintEnd_toStartOf="@+id/slot2_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/slot2_in" />
+
+    <Button
+        android:id="@+id/slot1_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/take_out"
+        android:textColor="#E4CF10"
+        android:backgroundTint="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/slot2_out"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slot1_in" />
+
+    <Button
+        android:id="@+id/slot2_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="309dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/park"
+        android:textColor="#E4CF10"
+        android:backgroundTint="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/slot2_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/slot1_in"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/slot2_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="115dp"
+        android:text="@string/take_out"
+        android:textColor="#E4CF10"
+        android:backgroundTint="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/registerbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/slot1_out"
+        app:layout_constraintTop_toBottomOf="@+id/slot2_in" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="1dp"
+        android:background="#E4CF10"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout4"
+        app:layout_constraintEnd_toStartOf="@+id/relativeLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/slot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="67dp"
+            android:background="@android:color/white"
+            android:text="@string/slot_1"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="73dp"
+        android:background="#E4CF10"
+        app:layout_constraintBottom_toTopOf="@+id/registerbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/slot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="79dp"
+            android:background="@android:color/white"
+            android:text="@string/slot_2"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/gobtn"
+        android:layout_width="69dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#E4CF10"
+        android:onClick="onGoButtonClicked"
+        android:text="Go"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questions"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <TextView
+        android:id="@+id/parkyourcar"
+        style="@style/signup"
+        android:layout_width="400dp"
+        android:layout_height="46dp"
+        android:background="#E4CF10"
+        android:text="@string/park_your_car"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/registerbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.082" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

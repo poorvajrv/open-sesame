@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Open Signature</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="username">UserName</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_password">Create Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="register_license_plate">Register License Plate</string>
+    <string name="refresh">Refresh</string>
+    <string name="park">PARK</string>
+    <string name="take_out">TAKE OUT</string>
+    <string name="owner">Owner</string>
+    <string name="guest">Guest</string>
+    <string name="choose_one_option">Choose one Option</string>
+    <string name="slot_1">Slot 1</string>
+    <string name="slot_2">Slot 2</string>
+    <string name="park_your_car">Park Your Car</string>
+    <string name="records_show_here">Records Show Here</string>
+    <string name="register">Register</string>
+    <string name="license_plate_number">License_Plate_Number</string>
+    <string name="insert">Insert</string>
+</resources>

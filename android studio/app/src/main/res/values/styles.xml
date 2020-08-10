@@ -1,0 +1,23 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="signature" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize"> 30sp </item>
+        <item name="android:textColor">#E8EAEF</item>
+        <item name="android:fontFamily"> cursive </item>
+    </style>
+
+    <style name="signup" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize"> 30sp </item>
+        <item name="android:textColor">#000104</item>
+        <item name="android:fontFamily"> casual </item>
+    </style>
+
+
+</resources>
